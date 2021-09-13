@@ -19,6 +19,11 @@ public class BlogPostController {
         return blogPostService.getBlogPost();
     }
 
+    @RequestMapping(path = "/testing2")
+    public String getTestingCall(){
+        return "Github test";
+    }
+
     public BlogPostController(BlogPostService blogPostService) {
         this.blogPostService = blogPostService;
     }
