@@ -15,5 +15,6 @@ public interface TeacherRepository extends JpaRepository<Teacher, Integer> {
     @Query("SELECT r FROM Teacher r WHERE r.email = ?1")
     Optional<Teacher> findReaderByEmail(String email);
 
+    
 
 }
